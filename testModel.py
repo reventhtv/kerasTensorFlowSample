@@ -16,7 +16,7 @@ from tensorflow.keras.metrics import categorical_crossentropy
 test_labels = []
 test_samples = []
 
-for i in range(50):
+for i in range(10):
     #The ~5% of younger individuals who experienced side effects
     random_younger = randint(13,64)
     test_samples.append(random_younger)
@@ -28,7 +28,7 @@ for i in range(50):
     test_labels.append(0)
 
 
-for i in range(1000):
+for i in range(200):
     #The ~95% of younger individuals who did not experience side effects
     random_younger = randint(13,64)
     test_samples.append(random_younger)
